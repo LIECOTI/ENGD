@@ -1,0 +1,34 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ENGD.UI.MainWindow"
+        Width="1100" Height="720"
+        CornerRadius="{DynamicResource WindowCornerRadius}"
+        Background="{DynamicResource MicaBrush}">
+
+  <Grid>
+    <!-- Custom Titlebar -->
+    <Border Height="48" VerticalAlignment="Top" Background="Transparent">
+      <Grid ColumnDefinitions="Auto,*,Auto">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="12,0">
+          <Ellipse Width="28" Height="28" Fill="{DynamicResource AccentColorBrush}" />
+          <TextBlock Text="ENGD" Margin="10,0" VerticalAlignment="Center" FontSize="16" Foreground="{DynamicResource AccentForegroundBrush}" />
+        </StackPanel>
+
+        <TextBlock Grid.Column="1" Text="{Binding CurrentPageTitle}" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,12,0">
+          <Button Content="Settings" Command="{Binding OpenSettingsCommand}" Margin="6,0"/>
+          <Button Content="Help" Command="{Binding OpenHelpCommand}" Margin="6,0"/>
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <!-- Main content card -->
+    <Border Style="{StaticResource CardStyle}" Margin="16,64,16,16">
+      <ContentControl Content="{Binding CurrentPageContent}" />
+    </Border>
+
+    <!-- WarningDialog overlay placeholder is shown via AlertService -->
+  </Grid>
+</Window>
