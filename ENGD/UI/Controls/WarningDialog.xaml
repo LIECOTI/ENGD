@@ -1,0 +1,22 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ENGD.UI.Controls.WarningDialog">
+  <Border CornerRadius="{DynamicResource OverlayCornerRadius}" Padding="18" Width="520" Background="{DynamicResource AppBackgroundLight}">
+    <StackPanel>
+      <StackPanel Orientation="Horizontal" Spacing="12">
+        <Ellipse Width="44" Height="44" Fill="OrangeRed" />
+        <TextBlock Text="{Binding Title}" FontSize="18" VerticalAlignment="Center" />
+      </StackPanel>
+
+      <TextBlock Text="{Binding Message}" TextWrapping="Wrap" Margin="0,12,0,0" />
+
+      <CheckBox IsChecked="{Binding ConfirmChecked}" Content="Я понимаю риск и согласен" Margin="0,12,0,0"/>
+
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,16,0,0">
+        <Button Content="Отмена" Command="{Binding CancelCommand}" Margin="0,0,8,0"/>
+        <Button Content="Подтвердить" Command="{Binding ConfirmCommand}" IsEnabled="{Binding ConfirmChecked}" />
+      </StackPanel>
+    </StackPanel>
+  </Border>
+</UserControl>

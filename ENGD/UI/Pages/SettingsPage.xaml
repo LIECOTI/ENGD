@@ -1,0 +1,22 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ENGD.UI.Pages.SettingsPage">
+  <StackPanel Spacing="12">
+    <TextBlock Text="Settings" FontSize="20" />
+    <Border Style="{StaticResource CardStyle}">
+      <StackPanel Spacing="8">
+        <TextBlock Text="Appearance" FontWeight="SemiBold" />
+        <CheckBox Content="Use Mica backdrop" IsChecked="{Binding UseMica}" />
+        <CheckBox Content="Enable rounded corners" IsChecked="{Binding UseRoundedCorners}" />
+      </StackPanel>
+    </Border>
+
+    <Border Style="{StaticResource CardStyle}">
+      <StackPanel Spacing="8">
+        <TextBlock Text="Safety" FontWeight="SemiBold" />
+        <TextBlock Text="Dangerous operations always require explicit confirmation." TextWrapping="Wrap" />
+      </StackPanel>
+    </Border>
+  </StackPanel>
+</UserControl>
