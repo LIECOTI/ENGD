@@ -55,7 +55,7 @@ Choose a mirror (Aliyun is recommended for speed).
 ⚠️ Disclaimer
 PLEASE READ CAREFULLY:
 
-The author (LIECO) is NOT responsible for any damage caused to your device.
+The author is NOT responsible for any damage caused to your device.
 
 Flashing partitions, unlocking bootloaders, and erasing data are advanced operations.
 Always verify that you are flashing the correct file for your specific device model.
