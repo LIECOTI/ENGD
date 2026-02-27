@@ -1,7 +1,4 @@
 # ENGD — Modern Android Toolkit
-Platform
-Tech
-License
 
 ENGD is a powerful, modern, and safe tool for managing Android devices via ADB and Fastboot. Built with WinUI 3 and .NET 10, it features a beautiful Windows 11-style Fluent Design interface, real-time device monitoring, and a built-in firmware downloader for Xiaomi devices.
 
