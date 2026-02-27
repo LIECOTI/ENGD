@@ -6,7 +6,7 @@ License
 
 ENGD is a powerful, modern, and safe tool for managing Android devices via ADB and Fastboot. Built with WinUI 3 and .NET 10, it features a beautiful Windows 11-style Fluent Design interface, real-time device monitoring, and a built-in firmware downloader for Xiaomi devices.
 
-#✨ Key Features
+# ✨ Key Features
 📱 Device Management (ADB)
 Real-time Dashboard: Auto-detection of connected devices, models, and connection states.
 Terminal: Built-in ADB shell console.
@@ -28,7 +28,7 @@ WinUI 3: Uses the latest Windows App SDK for native Mica effects and Fluent Desi
 Standalone: Comes with bundled Platform Tools (ADB/Fastboot) — no external installation required.
 Localization: Fully translated into English and Russian.
 📸 Screenshots
-(Place your screenshots here. Example: ![Dashboard](screenshots/dashboard.png))
+![Dashboard](sc1.png   sc2.png)
 
 # Dashboard	Xiaomi Downloader
 Dashboard Preview	Xiaomi Preview
