@@ -71,7 +71,7 @@ UI Framework: WinUI 3 (Windows App SDK 1.6)
 Architecture: Clean Architecture (Core / Infrastructure / UI)
 Logging: Serilog
 
-🤝 Feedback & Bugs
+# 🤝 Feedback & Bugs
 If you encounter any issues or have suggestions:
 
 Check the FAQ inside the app (About -> FAQ).
