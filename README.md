@@ -1,5 +1,4 @@
 # ENGD — Modern Android Toolkit
-GitHub release (latest by date)
 Platform
 Tech
 License
